@@ -1,3 +1,5 @@
+// src/mergesort.h
+#pragma once
 #include <vector>
 
 template <typename T>
@@ -26,6 +28,9 @@ void mergeSort(std::vector<T> &A, int left = 0, int right = -1){ //设置了默�
         else A[k++]=A_leftPart[i++];
     }
 
-    while(i < mid-left+1)A[k++]=A_leftPart[i++];
-    while(j < right-mid)A[k++]=A_rightPart[j++];
+    while(i < A_leftPart.size()) A[k++] = A_leftPart[i++];
+    while(j < A_rightPart.size()) A[k++] = A_rightPart[j++];
 }
+
+// 对于递归编程，要注意考虑每一次递归调用时函数被传参的是什么。一开始误以为每一次都在排“A”，所以写错了初始条件和k的初始值；
+// 回头要再写一遍

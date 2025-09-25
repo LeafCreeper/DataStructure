@@ -1,0 +1,3 @@
+N,merge_sort_ms,insertion_sort_ms,quick_sort_ms
+10,0.0275,0.0013,12.3885
+11,0.0274,0.0016,13.5533

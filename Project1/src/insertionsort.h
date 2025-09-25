@@ -1,3 +1,5 @@
+// src/insertionsort.h
+#pragma once
 #include <vector>
 
 // 实现泛型的插入排序
@@ -16,3 +18,4 @@ void insertionSort(std::vector<T> &A){
     }
 }
 
+// 课件里的伪代码的下标是从1开始的。所以在自己写的时候，各种地方都要相应地-1
