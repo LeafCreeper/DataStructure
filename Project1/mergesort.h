@@ -33,4 +33,9 @@ void mergeSort(std::vector<T> &A, int left = 0, int right = -1){ //设置了默�
 }
 
 // 对于递归编程，要注意考虑每一次递归调用时函数被传参的是什么。一开始误以为每一次都在排“A”，所以写错了初始条件和k的初始值；
-// 回头要再写一遍
+
+template<typename T>
+void mergeSort(std::vector<T> &A){
+    mergeSort(A, 0, -1);
+    return;
+}

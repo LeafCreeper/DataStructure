@@ -5,8 +5,8 @@
 // 实现泛型的插入排序
 template <typename T>
 void insertionSort(std::vector<T> &A){
-    int n = A.size();
-    for(int j=1;j<n;j++){
+    size_t n = A.size();
+    for(size_t j=1;j<n;j++){
         T key = A[j];
         // 把A[j]插入到已经完成排序的A[1 .. j-1]中
         int i = j-1;
